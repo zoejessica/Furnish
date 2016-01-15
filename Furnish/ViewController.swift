@@ -8,21 +8,28 @@
 
 import UIKit
 import Model // just here for the sample squirrels
+import Table
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    private var dataManager : EditingDataManager<Squirrel>?
     private var tableDataSource : UITableViewDataSource?
     
-       override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-       tableDataSource = SquirrelsDataManagerTableViewAdapter(tableView: tableView, items: sampleSquirrels)
+    
+//      let dataManager = SimpleDataManager<Squirrel>()
+        dataManager = EditingDataManager<Squirrel>()
+        tableDataSource = SquirrelsDataManagerTableViewAdapter(tableView: tableView, items: sampleSquirrels, dataManager: dataManager!)
         tableView.dataSource = tableDataSource
-        tableView.rowHeight = UITableViewAutomaticDimension        
     }
 
+    @IBAction func addItem(sender: UIBarButtonItem) {
+        dataManager?.appendItem(Squirrel(name: "Alien Squirrel", habitat: "Mars", description: "", imageName: "hamster.jpg"))
+    }
+   
     private let sampleSquirrels : [Squirrel] = [
             Squirrel(name: "American Red", habitat: "Boreal coniferous forests", description: "", imageName: "redsquirrel.jpg"),
             Squirrel(name: "Southern Flying Squirrel", habitat: "Eastern deciduous or mixed forests", description: "", imageName: "flyingsquirrel.jpg"),

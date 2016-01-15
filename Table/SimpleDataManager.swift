@@ -10,33 +10,26 @@ import UIKit
 
 public class SimpleDataManager<T> : DataFurnisher {
     public typealias ItemType = T
-    public var transform : (T, NSIndexPath) -> CellFurnisherType?
-    
+    public typealias Transform = (T, NSIndexPath) -> CellFurnisherType?
+    public var transform : Transform?
     public var items : [T]?
+    public init() {}
     
-    public init(transform: (T, NSIndexPath) -> CellFurnisherType?) {
-        self.transform = transform
-    }
   public   
     func numberOfItemsInSection(section: Int) -> Int {
         return items?.count ?? 0
     }
   public   
     func furnisherForIndexPath(indexPath: NSIndexPath) -> CellFurnisherType? {
-        if let i = items?[indexPath.row] {
-            return transform(i, indexPath)
+        if let i = items?[indexPath.row], t = transform {
+            return t(i, indexPath)
         } else {
             return nil
         }
     }
 }
 
-public protocol DataFurnisher {
-    typealias ItemType
-    var transform : (ItemType, NSIndexPath) -> CellFurnisherType? { get set }
-    func numberOfItemsInSection(section: Int) -> Int
-    func furnisherForIndexPath(indexPath: NSIndexPath) -> CellFurnisherType?
-}
+
 
 
 

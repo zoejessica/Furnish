@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DW9-9u-wDT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6G-TR-kzJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-e6-3KB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-e6-3KB">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Furnish.SquirrelBasicTableViewCell" textLabel="LhF-px-nRo" detailTextLabel="Kah-i7-zeD" style="IBUITableViewCellStyleSubtitle" id="wVg-hp-pxP" customClass="SquirrelBasicTableViewCell" customModule="Furnish" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wVg-hp-pxP" id="TbW-y3-VyT">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -47,7 +47,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Furnish.SquirrelDetailedTableViewCell" textLabel="yAa-W3-JaX" style="IBUITableViewCellStyleDefault" id="s3g-C8-siG" customClass="SquirrelDetailedTableViewCell" customModule="Furnish" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s3g-C8-siG" id="Dlz-qY-vEJ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -75,11 +75,36 @@
                             <constraint firstItem="KTf-8t-JMp" firstAttribute="top" secondItem="ZWm-e6-3KB" secondAttribute="bottom" id="lpU-bn-ehD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wVF-88-VxJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4NS-3x-bRI">
+                            <connections>
+                                <action selector="addItem:" destination="DW9-9u-wDT" id="HaE-xv-MSv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ZWm-e6-3KB" id="nkZ-K0-LvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTT-vf-qV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1290" y="484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zpz-ro-Enh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i6G-TR-kzJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gqb-08-raY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DW9-9u-wDT" kind="relationship" relationship="rootViewController" id="T08-nb-Q3G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Om-oF-d1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478" y="484"/>
         </scene>

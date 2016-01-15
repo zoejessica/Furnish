@@ -17,6 +17,9 @@
 		ED35CB151C492AAD0099B9FE /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED35CAFF1C492AAD0099B9FE /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED35CB1D1C492ACB0099B9FE /* Squirrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB1C1C492ACB0099B9FE /* Squirrel.swift */; };
 		ED35CB1F1C492B080099B9FE /* SquirrelFurnishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB1E1C492B080099B9FE /* SquirrelFurnishers.swift */; };
+		ED35CB221C4932E30099B9FE /* DataManagerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB211C4932E30099B9FE /* DataManagerProtocols.swift */; };
+		ED35CB241C4935260099B9FE /* EditingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB231C4935260099B9FE /* EditingDataManager.swift */; };
+		ED35CB261C4985AC0099B9FE /* hamster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED35CB251C4985AC0099B9FE /* hamster.jpg */; };
 		EDD31C491C47D6D600DB6632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C481C47D6D600DB6632 /* AppDelegate.swift */; };
 		EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C4A1C47D6D600DB6632 /* ViewController.swift */; };
 		EDD31C4E1C47D6D600DB6632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD31C4C1C47D6D600DB6632 /* Main.storyboard */; };
@@ -30,7 +33,7 @@
 		EDD31C831C47D75D00DB6632 /* Table.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDD31C6D1C47D75D00DB6632 /* Table.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDD31C901C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */; };
 		EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */; };
-		EDD31C941C47D7C800DB6632 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C921C47D7C800DB6632 /* DataManager.swift */; };
+		EDD31C941C47D7C800DB6632 /* SimpleDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C921C47D7C800DB6632 /* SimpleDataManager.swift */; };
 		EDD31C951C47D7C800DB6632 /* CellFurnisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C931C47D7C800DB6632 /* CellFurnisher.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +116,9 @@
 		ED35CB111C492AAD0099B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED35CB1C1C492ACB0099B9FE /* Squirrel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squirrel.swift; sourceTree = "<group>"; };
 		ED35CB1E1C492B080099B9FE /* SquirrelFurnishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelFurnishers.swift; sourceTree = "<group>"; };
+		ED35CB211C4932E30099B9FE /* DataManagerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerProtocols.swift; sourceTree = "<group>"; };
+		ED35CB231C4935260099B9FE /* EditingDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditingDataManager.swift; sourceTree = "<group>"; };
+		ED35CB251C4985AC0099B9FE /* hamster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hamster.jpg; sourceTree = "<group>"; };
 		EDD31C451C47D6D600DB6632 /* Furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD31C481C47D6D600DB6632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD31C4A1C47D6D600DB6632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +137,7 @@
 		EDD31C7F1C47D75D00DB6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelDataManagerTableViewAdapter.swift; sourceTree = "<group>"; };
 		EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelTableViewCells.swift; sourceTree = "<group>"; };
-		EDD31C921C47D7C800DB6632 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EDD31C921C47D7C800DB6632 /* SimpleDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDataManager.swift; sourceTree = "<group>"; };
 		EDD31C931C47D7C800DB6632 /* CellFurnisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellFurnisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,6 +221,7 @@
 				C85BE6D41C489A43009B9539 /* redsquirrel.jpg */,
 				C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */,
 				C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */,
+				ED35CB251C4985AC0099B9FE /* hamster.jpg */,
 			);
 			name = "App bits and pieces";
 			sourceTree = "<group>";
@@ -268,7 +275,9 @@
 		EDD31C6E1C47D75D00DB6632 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				EDD31C921C47D7C800DB6632 /* DataManager.swift */,
+				EDD31C921C47D7C800DB6632 /* SimpleDataManager.swift */,
+				ED35CB231C4935260099B9FE /* EditingDataManager.swift */,
+				ED35CB211C4932E30099B9FE /* DataManagerProtocols.swift */,
 				EDD31C931C47D7C800DB6632 /* CellFurnisher.swift */,
 				EDD31C6F1C47D75D00DB6632 /* Table.h */,
 				EDD31C711C47D75D00DB6632 /* Info.plist */,
@@ -506,6 +515,7 @@
 				EDD31C531C47D6D600DB6632 /* LaunchScreen.storyboard in Resources */,
 				EDD31C501C47D6D600DB6632 /* Assets.xcassets in Resources */,
 				C85BE6D71C489A43009B9539 /* redsquirrel.jpg in Resources */,
+				ED35CB261C4985AC0099B9FE /* hamster.jpg in Resources */,
 				EDD31C4E1C47D6D600DB6632 /* Main.storyboard in Resources */,
 				C85BE6D91C489A43009B9539 /* groundsquirrel.jpg in Resources */,
 				C85BE6D81C489A43009B9539 /* flyingsquirrel.jpg in Resources */,
@@ -576,8 +586,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED35CB241C4935260099B9FE /* EditingDataManager.swift in Sources */,
 				EDD31C951C47D7C800DB6632 /* CellFurnisher.swift in Sources */,
-				EDD31C941C47D7C800DB6632 /* DataManager.swift in Sources */,
+				EDD31C941C47D7C800DB6632 /* SimpleDataManager.swift in Sources */,
+				ED35CB221C4932E30099B9FE /* DataManagerProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

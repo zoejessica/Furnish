@@ -40,11 +40,6 @@ class SquirrelDetailedTableViewCell: UITableViewCell {
         let description: String
         let image: UIImage
     }
-    
-    @IBOutlet weak var squirrelImage: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var longDescription: UILabel!
-    
 }
 
 extension SquirrelDetailedTableViewCell : Updatable {

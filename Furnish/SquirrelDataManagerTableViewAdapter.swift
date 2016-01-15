@@ -8,6 +8,7 @@
 
 import UIKit
 import Table
+import Model
 
 class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
     
@@ -22,13 +23,13 @@ class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
         self.dataManager = SimpleDataManager<Squirrel>(transform: {
             squirrel, indexPath in
                 // there could be extra logic here to return a different type of furnisher for the index path
-            
-            
+                        
             if indexPath.row == 0 {
                 return squirrel.detailedFurnisher
             }
                 return squirrel.basicFurnisher
             })
+        
         self.dataManager.items = items
         super.init()
                 
@@ -58,26 +59,6 @@ class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
         }
         */
     }
-}
-
-extension Squirrel {
-    var basicFurnisher : CellFurnisher<SquirrelBasicTableViewCell>  {
-        get {
-            let viewData = SquirrelBasicTableViewCell.SquirrelViewData(name: self.name, habitat: self.habitat)
-            return  CellFurnisher<SquirrelBasicTableViewCell>(viewData: viewData)
-        }
-    }
-    
-    var detailedFurnisher : CellFurnisher<SquirrelDetailedTableViewCell> {
-        get {
-            let viewData = SquirrelDetailedTableViewCell.DetailedSquirrelViewData(name: self.name, description: self.description, image: UIImage(imageLiteral: self.imageName))
-                return CellFurnisher<SquirrelDetailedTableViewCell>(viewData: viewData)
-        }
-        
-        
-    }
-    
-    
 }
 
 

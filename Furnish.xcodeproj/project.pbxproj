@@ -10,7 +10,13 @@
 		C85BE6D71C489A43009B9539 /* redsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D41C489A43009B9539 /* redsquirrel.jpg */; };
 		C85BE6D81C489A43009B9539 /* flyingsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */; };
 		C85BE6D91C489A43009B9539 /* groundsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */; };
-		EDAF045E1C48231E0062F4CF /* Squirrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF045D1C48231E0062F4CF /* Squirrel.swift */; };
+		ED35CB021C492AAD0099B9FE /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = ED35CB011C492AAD0099B9FE /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED35CB091C492AAD0099B9FE /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED35CAFF1C492AAD0099B9FE /* Model.framework */; };
+		ED35CB101C492AAD0099B9FE /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB0F1C492AAD0099B9FE /* ModelTests.swift */; };
+		ED35CB141C492AAD0099B9FE /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED35CAFF1C492AAD0099B9FE /* Model.framework */; };
+		ED35CB151C492AAD0099B9FE /* Model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED35CAFF1C492AAD0099B9FE /* Model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED35CB1D1C492ACB0099B9FE /* Squirrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB1C1C492ACB0099B9FE /* Squirrel.swift */; };
+		ED35CB1F1C492B080099B9FE /* SquirrelFurnishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB1E1C492B080099B9FE /* SquirrelFurnishers.swift */; };
 		EDD31C491C47D6D600DB6632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C481C47D6D600DB6632 /* AppDelegate.swift */; };
 		EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C4A1C47D6D600DB6632 /* ViewController.swift */; };
 		EDD31C4E1C47D6D600DB6632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD31C4C1C47D6D600DB6632 /* Main.storyboard */; };
@@ -29,6 +35,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		ED35CB0A1C492AAD0099B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD31C3D1C47D6D600DB6632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35CAFE1C492AAD0099B9FE;
+			remoteInfo = Model;
+		};
+		ED35CB0C1C492AAD0099B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD31C3D1C47D6D600DB6632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD31C441C47D6D600DB6632;
+			remoteInfo = Furnish;
+		};
+		ED35CB121C492AAD0099B9FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD31C3D1C47D6D600DB6632 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED35CAFE1C492AAD0099B9FE;
+			remoteInfo = Model;
+		};
 		EDD31C5A1C47D6D600DB6632 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDD31C3D1C47D6D600DB6632 /* Project object */;
@@ -66,6 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ED35CB151C492AAD0099B9FE /* Model.framework in Embed Frameworks */,
 				EDD31C831C47D75D00DB6632 /* Table.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,7 +105,14 @@
 		C85BE6D41C489A43009B9539 /* redsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redsquirrel.jpg; sourceTree = "<group>"; };
 		C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flyingsquirrel.jpg; sourceTree = "<group>"; };
 		C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groundsquirrel.jpg; sourceTree = "<group>"; };
-		EDAF045D1C48231E0062F4CF /* Squirrel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squirrel.swift; sourceTree = "<group>"; };
+		ED35CAFF1C492AAD0099B9FE /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED35CB011C492AAD0099B9FE /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		ED35CB031C492AAD0099B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED35CB081C492AAD0099B9FE /* ModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED35CB0F1C492AAD0099B9FE /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		ED35CB111C492AAD0099B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED35CB1C1C492ACB0099B9FE /* Squirrel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squirrel.swift; sourceTree = "<group>"; };
+		ED35CB1E1C492B080099B9FE /* SquirrelFurnishers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelFurnishers.swift; sourceTree = "<group>"; };
 		EDD31C451C47D6D600DB6632 /* Furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD31C481C47D6D600DB6632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD31C4A1C47D6D600DB6632 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +136,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		ED35CAFB1C492AAD0099B9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED35CB051C492AAD0099B9FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35CB091C492AAD0099B9FE /* Model.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDD31C421C47D6D600DB6632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED35CB141C492AAD0099B9FE /* Model.framework in Frameworks */,
 				EDD31C821C47D75D00DB6632 /* Table.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,12 +185,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED35CB001C492AAD0099B9FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED35CB1C1C492ACB0099B9FE /* Squirrel.swift */,
+				ED35CB011C492AAD0099B9FE /* Model.h */,
+				ED35CB031C492AAD0099B9FE /* Info.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED35CB0E1C492AAD0099B9FE /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED35CB0F1C492AAD0099B9FE /* ModelTests.swift */,
+				ED35CB111C492AAD0099B9FE /* Info.plist */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		ED35CB201C492C690099B9FE /* App bits and pieces */ = {
+			isa = PBXGroup;
+			children = (
+				EDD31C481C47D6D600DB6632 /* AppDelegate.swift */,
+				EDD31C4C1C47D6D600DB6632 /* Main.storyboard */,
+				EDD31C4F1C47D6D600DB6632 /* Assets.xcassets */,
+				EDD31C511C47D6D600DB6632 /* LaunchScreen.storyboard */,
+				EDD31C541C47D6D600DB6632 /* Info.plist */,
+				C85BE6D41C489A43009B9539 /* redsquirrel.jpg */,
+				C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */,
+				C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */,
+			);
+			name = "App bits and pieces";
+			sourceTree = "<group>";
+		};
 		EDD31C3C1C47D6D600DB6632 = {
 			isa = PBXGroup;
 			children = (
 				EDD31C471C47D6D600DB6632 /* Furnish */,
+				ED35CB001C492AAD0099B9FE /* Model */,
 				EDD31C6E1C47D75D00DB6632 /* Table */,
 				EDD31C8B1C47D76700DB6632 /* Tests */,
+				ED35CB0E1C492AAD0099B9FE /* ModelTests */,
 				EDD31C461C47D6D600DB6632 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +238,8 @@
 				EDD31C591C47D6D600DB6632 /* FurnishTests.xctest */,
 				EDD31C6D1C47D75D00DB6632 /* Table.framework */,
 				EDD31C761C47D75D00DB6632 /* TableTests.xctest */,
+				ED35CAFF1C492AAD0099B9FE /* Model.framework */,
+				ED35CB081C492AAD0099B9FE /* ModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,18 +247,11 @@
 		EDD31C471C47D6D600DB6632 /* Furnish */ = {
 			isa = PBXGroup;
 			children = (
-				EDAF045D1C48231E0062F4CF /* Squirrel.swift */,
 				EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */,
+				ED35CB1E1C492B080099B9FE /* SquirrelFurnishers.swift */,
 				EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */,
-				EDD31C481C47D6D600DB6632 /* AppDelegate.swift */,
 				EDD31C4A1C47D6D600DB6632 /* ViewController.swift */,
-				EDD31C4C1C47D6D600DB6632 /* Main.storyboard */,
-				EDD31C4F1C47D6D600DB6632 /* Assets.xcassets */,
-				EDD31C511C47D6D600DB6632 /* LaunchScreen.storyboard */,
-				EDD31C541C47D6D600DB6632 /* Info.plist */,
-				C85BE6D41C489A43009B9539 /* redsquirrel.jpg */,
-				C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */,
-				C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */,
+				ED35CB201C492C690099B9FE /* App bits and pieces */,
 			);
 			path = Furnish;
 			sourceTree = "<group>";
@@ -215,6 +297,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		ED35CAFC1C492AAD0099B9FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35CB021C492AAD0099B9FE /* Model.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDD31C6A1C47D75D00DB6632 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,6 +316,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		ED35CAFE1C492AAD0099B9FE /* Model */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED35CB1A1C492AAD0099B9FE /* Build configuration list for PBXNativeTarget "Model" */;
+			buildPhases = (
+				ED35CAFA1C492AAD0099B9FE /* Sources */,
+				ED35CAFB1C492AAD0099B9FE /* Frameworks */,
+				ED35CAFC1C492AAD0099B9FE /* Headers */,
+				ED35CAFD1C492AAD0099B9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Model;
+			productName = Model;
+			productReference = ED35CAFF1C492AAD0099B9FE /* Model.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED35CB071C492AAD0099B9FE /* ModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED35CB1B1C492AAD0099B9FE /* Build configuration list for PBXNativeTarget "ModelTests" */;
+			buildPhases = (
+				ED35CB041C492AAD0099B9FE /* Sources */,
+				ED35CB051C492AAD0099B9FE /* Frameworks */,
+				ED35CB061C492AAD0099B9FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED35CB0B1C492AAD0099B9FE /* PBXTargetDependency */,
+				ED35CB0D1C492AAD0099B9FE /* PBXTargetDependency */,
+			);
+			name = ModelTests;
+			productName = ModelTests;
+			productReference = ED35CB081C492AAD0099B9FE /* ModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EDD31C441C47D6D600DB6632 /* Furnish */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDD31C621C47D6D600DB6632 /* Build configuration list for PBXNativeTarget "Furnish" */;
@@ -239,6 +366,7 @@
 			);
 			dependencies = (
 				EDD31C811C47D75D00DB6632 /* PBXTargetDependency */,
+				ED35CB131C492AAD0099B9FE /* PBXTargetDependency */,
 			);
 			name = Furnish;
 			productName = Furnish;
@@ -310,6 +438,13 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Hot Beverage";
 				TargetAttributes = {
+					ED35CAFE1C492AAD0099B9FE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ED35CB071C492AAD0099B9FE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EDD31C441C47D6D600DB6632;
+					};
 					EDD31C441C47D6D600DB6632 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -341,13 +476,29 @@
 			targets = (
 				EDD31C441C47D6D600DB6632 /* Furnish */,
 				EDD31C6C1C47D75D00DB6632 /* Table */,
+				ED35CAFE1C492AAD0099B9FE /* Model */,
 				EDD31C581C47D6D600DB6632 /* FurnishTests */,
 				EDD31C751C47D75D00DB6632 /* TableTests */,
+				ED35CB071C492AAD0099B9FE /* ModelTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		ED35CAFD1C492AAD0099B9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED35CB061C492AAD0099B9FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDD31C431C47D6D600DB6632 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,13 +536,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		ED35CAFA1C492AAD0099B9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35CB1D1C492ACB0099B9FE /* Squirrel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED35CB041C492AAD0099B9FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED35CB101C492AAD0099B9FE /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EDD31C411C47D6D600DB6632 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED35CB1F1C492B080099B9FE /* SquirrelFurnishers.swift in Sources */,
 				EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */,
 				EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCells.swift in Sources */,
-				EDAF045E1C48231E0062F4CF /* Squirrel.swift in Sources */,
 				EDD31C491C47D6D600DB6632 /* AppDelegate.swift in Sources */,
 				EDD31C901C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift in Sources */,
 			);
@@ -425,6 +592,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		ED35CB0B1C492AAD0099B9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35CAFE1C492AAD0099B9FE /* Model */;
+			targetProxy = ED35CB0A1C492AAD0099B9FE /* PBXContainerItemProxy */;
+		};
+		ED35CB0D1C492AAD0099B9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDD31C441C47D6D600DB6632 /* Furnish */;
+			targetProxy = ED35CB0C1C492AAD0099B9FE /* PBXContainerItemProxy */;
+		};
+		ED35CB131C492AAD0099B9FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED35CAFE1C492AAD0099B9FE /* Model */;
+			targetProxy = ED35CB121C492AAD0099B9FE /* PBXContainerItemProxy */;
+		};
 		EDD31C5B1C47D6D600DB6632 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EDD31C441C47D6D600DB6632 /* Furnish */;
@@ -467,6 +649,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		ED35CB161C492AAD0099B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HotBeverage.Model;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED35CB171C492AAD0099B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Model/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HotBeverage.Model;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED35CB181C492AAD0099B9FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HotBeverage.ModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furnish.app/Furnish";
+			};
+			name = Debug;
+		};
+		ED35CB191C492AAD0099B9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HotBeverage.ModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furnish.app/Furnish";
+			};
+			name = Release;
+		};
 		EDD31C601C47D6D600DB6632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -664,6 +909,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		ED35CB1A1C492AAD0099B9FE /* Build configuration list for PBXNativeTarget "Model" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED35CB161C492AAD0099B9FE /* Debug */,
+				ED35CB171C492AAD0099B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ED35CB1B1C492AAD0099B9FE /* Build configuration list for PBXNativeTarget "ModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED35CB181C492AAD0099B9FE /* Debug */,
+				ED35CB191C492AAD0099B9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EDD31C401C47D6D600DB6632 /* Build configuration list for PBXProject "Furnish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

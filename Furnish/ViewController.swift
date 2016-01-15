@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Model // just here for the sample squirrels
 
 class ViewController: UIViewController {
 

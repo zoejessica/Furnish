@@ -27,7 +27,7 @@ public struct CellFurnisher<Cell where Cell : Updatable, Cell : UITableViewCell>
     public let viewData: Cell.ViewData
     
     public static func reuseIdentifier() -> String {
-        return NSStringFromClass(Cell)
+        return String(Cell)
     }
     
     

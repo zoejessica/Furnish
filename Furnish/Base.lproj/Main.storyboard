@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Furnish.SquirrelBasicTableViewCell" textLabel="LhF-px-nRo" detailTextLabel="Kah-i7-zeD" style="IBUITableViewCellStyleSubtitle" id="wVg-hp-pxP" customClass="SquirrelBasicTableViewCell" customModule="Furnish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SquirrelBasicTableViewCell" textLabel="LhF-px-nRo" detailTextLabel="Kah-i7-zeD" style="IBUITableViewCellStyleSubtitle" id="wVg-hp-pxP" customClass="SquirrelBasicTableViewCell" customModule="Furnish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wVg-hp-pxP" id="TbW-y3-VyT">
@@ -46,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Furnish.SquirrelDetailedTableViewCell" textLabel="yAa-W3-JaX" style="IBUITableViewCellStyleDefault" id="s3g-C8-siG" customClass="SquirrelDetailedTableViewCell" customModule="Furnish" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SquirrelDetailedTableViewCell" textLabel="yAa-W3-JaX" style="IBUITableViewCellStyleDefault" id="s3g-C8-siG" customClass="SquirrelDetailedTableViewCell" customModule="Furnish" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s3g-C8-siG" id="Dlz-qY-vEJ">

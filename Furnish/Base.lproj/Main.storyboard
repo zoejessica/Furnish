@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-e6-3KB">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-e6-3KB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Furnish.SquirrelBasicTableViewCell" textLabel="LhF-px-nRo" detailTextLabel="Kah-i7-zeD" style="IBUITableViewCellStyleSubtitle" id="wVg-hp-pxP" customClass="SquirrelBasicTableViewCell" customModule="Furnish" customModuleProvider="target">
@@ -70,9 +70,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ZWm-e6-3KB" secondAttribute="trailing" constant="-20" id="L0a-g7-HiK"/>
-                            <constraint firstItem="ZWm-e6-3KB" firstAttribute="top" secondItem="fah-8U-0jm" secondAttribute="bottom" id="TzX-vl-YmJ"/>
                             <constraint firstItem="ZWm-e6-3KB" firstAttribute="leading" secondItem="IId-uQ-5zh" secondAttribute="leadingMargin" constant="-20" id="aaI-kh-YCD"/>
                             <constraint firstItem="KTf-8t-JMp" firstAttribute="top" secondItem="ZWm-e6-3KB" secondAttribute="bottom" id="lpU-bn-ehD"/>
+                            <constraint firstItem="ZWm-e6-3KB" firstAttribute="top" secondItem="fah-8U-0jm" secondAttribute="bottom" constant="-64" id="reD-gX-nGm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wVF-88-VxJ">

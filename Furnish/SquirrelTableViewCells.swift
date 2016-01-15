@@ -34,3 +34,27 @@ extension SquirrelBasicTableViewCell : Updatable {
     }
 }
 
+class SquirrelDetailedTableViewCell: UITableViewCell {
+    struct DetailedSquirrelViewData {
+        let name: String
+        let description: String
+        let image: UIImage
+    }
+    
+    @IBOutlet weak var squirrelImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var longDescription: UILabel!
+    
+}
+
+extension SquirrelDetailedTableViewCell : Updatable {
+    typealias ViewData = DetailedSquirrelViewData
+    func updateWithViewData(viewData: ViewData) {
+        textLabel?.text = viewData.name
+        detailTextLabel?.text = viewData.description
+        imageView?.image = viewData.image
+        
+    }
+    
+}
+

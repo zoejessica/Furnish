@@ -13,7 +13,7 @@ class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
     
     private let tableView : UITableView
     private let dataManager : SimpleDataManager<Squirrel>
-    private let furnisherTypes = [CellFurnisher<SquirrelBasicTableViewCell>.self]
+    private let furnisherTypes = [CellFurnisher<SquirrelDetailedTableViewCell>.self]
     
     
     init(tableView: UITableView, items: [Squirrel]) {
@@ -22,6 +22,11 @@ class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
         self.dataManager = SimpleDataManager<Squirrel>(transform: {
             squirrel, indexPath in
                 // there could be extra logic here to return a different type of furnisher for the index path
+            
+            
+            if indexPath.row == 0 {
+                return squirrel.detailedFurnisher
+            }
                 return squirrel.basicFurnisher
             })
         self.dataManager.items = items
@@ -46,47 +51,13 @@ class SquirrelsDataManagerTableViewAdapter : NSObject, UITableViewDataSource {
     }
     
     func registerCells() {
-        
-//        tableView.registerClass(SquirrelBasicTableViewCell.self, forCellReuseIdentifier: "SquirrelTableViewCell")
-        
-        
+        /*
+        // Here cell classes/reuse ids are registered directly in the storyboard, but this works for cells with custom views or nibs
         for furnisherType in furnisherTypes {
-            
-            let id = furnisherType.reuseIdentifier()
-            let c = furnisherType.cellClass()
-            
-            
-//            tableView.registerClass(furnisherType.cellClass(), forCellReuseIdentifier: furnisherType.reuseIdentifier())
+            tableView.registerClass(furnisherType.cellClass(), forCellReuseIdentifier: furnisherType.reuseIdentifier())
         }
+        */
     }
-    
-    ///////////
-    
-//    let items = [
-//        Squirrel(name: "American Red", habitat: "Boreal coniferous forests"),
-//        Squirrel(name: "Southern Flying Squirrel", habitat: "Eastern deciduous or mixed forests"),
-//        Squirrel(name: "Californian Ground Squirrel", habitat: "Natural rangeland, pastures, grain fields")]
-//    
-//
-//    
-//    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        return 1
-//    }
-//    
-//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        
-//        let cell = SquirrelBasicTableViewCell()
-//        cell.textLabel?.text = items[indexPath.row].name
-//        cell.detailTextLabel?.text = items[indexPath.row].habitat
-//        
-//        return cell
-//    }
-//    
-//    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return items.count
-//    }
-
 }
 
 extension Squirrel {
@@ -96,6 +67,17 @@ extension Squirrel {
             return  CellFurnisher<SquirrelBasicTableViewCell>(viewData: viewData)
         }
     }
+    
+    var detailedFurnisher : CellFurnisher<SquirrelDetailedTableViewCell> {
+        get {
+            let viewData = SquirrelDetailedTableViewCell.DetailedSquirrelViewData(name: self.name, description: self.description, image: UIImage(imageLiteral: self.imageName))
+                return CellFurnisher<SquirrelDetailedTableViewCell>(viewData: viewData)
+        }
+        
+        
+    }
+    
+    
 }
 
 

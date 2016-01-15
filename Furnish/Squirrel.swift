@@ -11,5 +11,7 @@ import Foundation
 struct Squirrel {
     let name : String
     let habitat : String
+    let description : String
+    let imageName : String
 }
 

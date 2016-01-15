@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C85BE6D71C489A43009B9539 /* redsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D41C489A43009B9539 /* redsquirrel.jpg */; };
+		C85BE6D81C489A43009B9539 /* flyingsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */; };
+		C85BE6D91C489A43009B9539 /* groundsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */; };
 		EDAF045E1C48231E0062F4CF /* Squirrel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF045D1C48231E0062F4CF /* Squirrel.swift */; };
 		EDD31C491C47D6D600DB6632 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C481C47D6D600DB6632 /* AppDelegate.swift */; };
 		EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C4A1C47D6D600DB6632 /* ViewController.swift */; };
@@ -19,9 +22,8 @@
 		EDD31C7E1C47D75D00DB6632 /* TableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C7D1C47D75D00DB6632 /* TableTests.swift */; };
 		EDD31C821C47D75D00DB6632 /* Table.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD31C6D1C47D75D00DB6632 /* Table.framework */; };
 		EDD31C831C47D75D00DB6632 /* Table.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDD31C6D1C47D75D00DB6632 /* Table.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EDD31C8F1C47D7BD00DB6632 /* SquirrelViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8C1C47D7BD00DB6632 /* SquirrelViewData.swift */; };
 		EDD31C901C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */; };
-		EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCell.swift */; };
+		EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */; };
 		EDD31C941C47D7C800DB6632 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C921C47D7C800DB6632 /* DataManager.swift */; };
 		EDD31C951C47D7C800DB6632 /* CellFurnisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD31C931C47D7C800DB6632 /* CellFurnisher.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C85BE6D41C489A43009B9539 /* redsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redsquirrel.jpg; sourceTree = "<group>"; };
+		C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flyingsquirrel.jpg; sourceTree = "<group>"; };
+		C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groundsquirrel.jpg; sourceTree = "<group>"; };
 		EDAF045D1C48231E0062F4CF /* Squirrel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squirrel.swift; sourceTree = "<group>"; };
 		EDD31C451C47D6D600DB6632 /* Furnish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furnish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD31C481C47D6D600DB6632 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,9 +94,8 @@
 		EDD31C761C47D75D00DB6632 /* TableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD31C7D1C47D75D00DB6632 /* TableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTests.swift; sourceTree = "<group>"; };
 		EDD31C7F1C47D75D00DB6632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDD31C8C1C47D7BD00DB6632 /* SquirrelViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelViewData.swift; sourceTree = "<group>"; };
 		EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelDataManagerTableViewAdapter.swift; sourceTree = "<group>"; };
-		EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelTableViewCell.swift; sourceTree = "<group>"; };
+		EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquirrelTableViewCells.swift; sourceTree = "<group>"; };
 		EDD31C921C47D7C800DB6632 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EDD31C931C47D7C800DB6632 /* CellFurnisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellFurnisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,14 +160,16 @@
 			children = (
 				EDAF045D1C48231E0062F4CF /* Squirrel.swift */,
 				EDD31C8D1C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift */,
-				EDD31C8C1C47D7BD00DB6632 /* SquirrelViewData.swift */,
-				EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCell.swift */,
+				EDD31C8E1C47D7BD00DB6632 /* SquirrelTableViewCells.swift */,
 				EDD31C481C47D6D600DB6632 /* AppDelegate.swift */,
 				EDD31C4A1C47D6D600DB6632 /* ViewController.swift */,
 				EDD31C4C1C47D6D600DB6632 /* Main.storyboard */,
 				EDD31C4F1C47D6D600DB6632 /* Assets.xcassets */,
 				EDD31C511C47D6D600DB6632 /* LaunchScreen.storyboard */,
 				EDD31C541C47D6D600DB6632 /* Info.plist */,
+				C85BE6D41C489A43009B9539 /* redsquirrel.jpg */,
+				C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */,
+				C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */,
 			);
 			path = Furnish;
 			sourceTree = "<group>";
@@ -348,7 +354,10 @@
 			files = (
 				EDD31C531C47D6D600DB6632 /* LaunchScreen.storyboard in Resources */,
 				EDD31C501C47D6D600DB6632 /* Assets.xcassets in Resources */,
+				C85BE6D71C489A43009B9539 /* redsquirrel.jpg in Resources */,
 				EDD31C4E1C47D6D600DB6632 /* Main.storyboard in Resources */,
+				C85BE6D91C489A43009B9539 /* groundsquirrel.jpg in Resources */,
+				C85BE6D81C489A43009B9539 /* flyingsquirrel.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,10 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */,
-				EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCell.swift in Sources */,
+				EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCells.swift in Sources */,
 				EDAF045E1C48231E0062F4CF /* Squirrel.swift in Sources */,
 				EDD31C491C47D6D600DB6632 /* AppDelegate.swift in Sources */,
-				EDD31C8F1C47D7BD00DB6632 /* SquirrelViewData.swift in Sources */,
 				EDD31C901C47D7BD00DB6632 /* SquirrelDataManagerTableViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

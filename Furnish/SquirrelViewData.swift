@@ -7,13 +7,13 @@
 //
 
 import UIKit
-import Model
 
 /** 
 Links a model to its ViewData representation
 */
-extension RecipeTableViewCell.RecipeViewData {
-    init(recipe: Recipe) {
-        self.name = recipe.name
+extension SquirrelBasicTableViewCell.SquirrelViewData {
+    init(squirrel: Squirrel) {
+        self.name = squirrel.name
+        self.habitat = squirrel.habitat
     }
 }

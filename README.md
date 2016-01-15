@@ -1,7 +1,4 @@
 # Furnish
-Configurable table view controller framework, drawing on ideas from Arkadiusz Holko (fastred) and Andy Matuschak (andymatuschak)
-
-# Furnish
 
 A mash up of ideas, still in progress, from Andy Matushak's talk on [Refactoring the MegaViewController](https://realm.io/news/andy-matuschak-refactor-mega-controller/) and Arkadiusz Holko's [Typed, yet Flexible Table View Controller](http://holko.pl/2016/01/05/typed-table-view-controller/?utm_campaign=iOS%2BDev%2BWeekly&utm_medium=email&utm_source=iOS_Dev_Weekly_Issue_232).
 

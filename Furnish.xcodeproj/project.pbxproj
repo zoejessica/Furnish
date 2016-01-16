@@ -10,6 +10,7 @@
 		C85BE6D71C489A43009B9539 /* redsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D41C489A43009B9539 /* redsquirrel.jpg */; };
 		C85BE6D81C489A43009B9539 /* flyingsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */; };
 		C85BE6D91C489A43009B9539 /* groundsquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */; };
+		C8DBA6A61C4B00E2001D2654 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C8DBA6A51C4B00E2001D2654 /* README.md */; };
 		ED35CB021C492AAD0099B9FE /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = ED35CB011C492AAD0099B9FE /* Model.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED35CB091C492AAD0099B9FE /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED35CAFF1C492AAD0099B9FE /* Model.framework */; };
 		ED35CB101C492AAD0099B9FE /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED35CB0F1C492AAD0099B9FE /* ModelTests.swift */; };
@@ -108,6 +109,7 @@
 		C85BE6D41C489A43009B9539 /* redsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redsquirrel.jpg; sourceTree = "<group>"; };
 		C85BE6D51C489A43009B9539 /* flyingsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flyingsquirrel.jpg; sourceTree = "<group>"; };
 		C85BE6D61C489A43009B9539 /* groundsquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groundsquirrel.jpg; sourceTree = "<group>"; };
+		C8DBA6A51C4B00E2001D2654 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Furnish/README.md; sourceTree = "<group>"; };
 		ED35CAFF1C492AAD0099B9FE /* Model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED35CB011C492AAD0099B9FE /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		ED35CB031C492AAD0099B9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 		EDD31C3C1C47D6D600DB6632 = {
 			isa = PBXGroup;
 			children = (
+				C8DBA6A51C4B00E2001D2654 /* README.md */,
 				EDD31C471C47D6D600DB6632 /* Furnish */,
 				ED35CB001C492AAD0099B9FE /* Model */,
 				EDD31C6E1C47D75D00DB6632 /* Table */,
@@ -566,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8DBA6A61C4B00E2001D2654 /* README.md in Sources */,
 				ED35CB1F1C492B080099B9FE /* SquirrelFurnishers.swift in Sources */,
 				EDD31C4B1C47D6D600DB6632 /* ViewController.swift in Sources */,
 				EDD31C911C47D7BD00DB6632 /* SquirrelTableViewCells.swift in Sources */,
@@ -928,6 +932,7 @@
 				ED35CB171C492AAD0099B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED35CB1B1C492AAD0099B9FE /* Build configuration list for PBXNativeTarget "ModelTests" */ = {
 			isa = XCConfigurationList;
@@ -936,6 +941,7 @@
 				ED35CB191C492AAD0099B9FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDD31C401C47D6D600DB6632 /* Build configuration list for PBXProject "Furnish" */ = {
 			isa = XCConfigurationList;
